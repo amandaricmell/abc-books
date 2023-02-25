@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+  --branco: #ffffff;
+  --amarelo: #ffeb00;
+  --azul-escuro: #131b60;
+  --azul-escuro-2: #1d2677;
+  --azul-claro: #28328c;
+  --azul-claro-2: #525ed2;
+  --cinza: #909090;
+  --preto: #00063f;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #949494;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+header,
+footer {
+  color: var(--branco);
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+
+footer {
+  background-color: var(--azul-claro) !important;
+  overflow-y: hidden;
+}
+
+nav {
+  a {
+    color: white;
+  }
+
+  @media screen and (min-width: 980) {
+    ul {
+      gap: 20px;
+    }
+  }
+}
+
+.blue {
+  color: var(--azul-escuro) !important;
+}
+
+////////////// PAGE PUBLICATIONS
+
+// MEGA-HEADER
+#megaHeader {
+  height: 581px;
+  background-image: url(/assets/img/banner-publicaoes.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #28328cf8;
+
+  h1 {
+    font-weight: 100;
+  }
+}
+// PUBLICATIONS
+#publications {
+  margin-top: -30px;
+
+  .row:nth-child(1) {
+    margin-bottom: 15rem !important;
+  }
+
+  .card {
+    background-color: var(--amarelo);
+    border-radius: 80px;
+
+    h3 {
+      color: var(--azul-claro);
+    }
+
+    p {
+      font-weight: 500;
+    }
+
+    button {
+      // width: 70%;
+      background: none;
+      color: var(--azul-claro);
+      border-radius: 50px;
+      border-color: var(--azul-claro);
+    }
+
+    button:hover {
+      background-color: var(--branco);
+      transition: all 0.5s;
+    }
+  }
+
+  figure {
+    margin-top: -220px;
+  }
+
+  .shadow {
+    img {
+      box-shadow: 2px 3px 8px 2px rgba(31, 31, 31, 0.315);
+    }
+  }
+
+  .page-link {
+    border-radius: 50% !important;
+    background-color: var(--azul-escuro);
+    color: var(--amarelo);
+    border: none;
+  }
+
+  .page-link:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.733);
+    transition: all 0.1s ease-in;
+  }
+
+  .owl-carousel .owl-item img {
+    display: inline;
+    width: auto;
+  }
+
+  .owl-stage-outer {
+    z-index: 5;
+    overflow: visible;
+
+    .owl-stage {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .owl-nav,
+  .owl-dots {
+    display: none;
+  }
+}
+// NEWS LETTER
+#newsLetter {
+  min-height: 400px;
+  background-image: url(/assets/img/fundo-news.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #131b60;
+
+  h2 {
+    font-weight: 100;
+    span {
+      background-color: var(--amarelo);
+      color: var(--azul-claro);
+      font-weight: 300;
+    }
+  }
+
+  button {
+    background: none !important;
+    color: var(--amarelo);
+    border-radius: 50px;
+    border-color: var(--amarelo) !important;
+  }
+
+  button:hover {
+    background-color: var(--amarelo) !important;
+    color: #131b60;
+    transition: all 0.5s;
+  }
+
+  .form-control {
+    border-radius: 50px !important;
+    border: none;
+  }
+
+  .form-control::placeholder {
+    color: #00000023;
+  }
+}
+// PARTNERS
+#partners {
+  min-height: 300px;
+
+  h2 {
+    color: var(--azul-escuro);
+    font-weight: 100 !important;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .row {
+      gap: 3rem;
+    }
+  }
+}
+
+///////////// PAGE WHERE TO FIND
+
+// MEGA HEADER 2
+#megaHeader2 {
+  height: 600px;
+  background-image: url(/assets/img/banner-onde-encontrar.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #28328c;
+
+  h1 {
+    font-weight: 100;
+  }
+}
+
+// LIBRARIES
+#libraries {
+  margin-top: -90px;
+
+  @media only screen and (max-width: 1279px) {
+    min-height: 750px;
+  }
+
+  @media screen and (max-width: 991px) {
+    min-height: 1500px;
+  }
+
+  .row:nth-child(1) {
+    margin-bottom: 11rem;
+
+    @media screen and (max-width: 991px) {
+      gap: 2rem;
+      margin-bottom: 25rem;
+    }
+  }
+
+  .row:nth-child(2) {
+    margin-bottom: 10rem;
+  }
+
+  .card {
+    background-color: var(--preto);
+    border-radius: 40px;
+    max-width: 220px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.589);
+
+    @media only screen and(max-width:991px) {
+      gap: 1rem;
+    }
+  }
+
+  button {
+    background: none;
+    border: 1px solid var(--branco) !important;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
+
+  button:hover {
+    background-color: var(--branco);
+    transition: all 0.5s;
+    color: var(--preto) !important;
+    transition: all 0.5s ease-in;
+
+    img {
+      opacity: 0;
+    }
+  }
+
+  h2 {
+    font-weight: 100;
+    color: var(--azul-escuro);
+  }
+
+  .selector {
+    color: var(--azul-escuro);
+
+    select {
+      cursor: pointer;
+      z-index: 5;
+      color: var(--azul-escuro);
+      max-width: 200px;
+      border-radius: 40px;
+      border: 1px solid;
+    }
+
+    @media screen and (max-width: 765px) {
+      gap: 1rem;
+    }
+  }
+
+  figure:nth-child(1) {
+    top: 240px;
+
+    @media screen and (max-width: 1278px) {
+      top: 40px;
+    }
+    @media screen and (max-width: 991px) {
+      top: 440px;
+    }
+  }
+
+  figure:nth-child(3) {
+    right: 0;
+    top: 380px;
+
+    @media screen and (max-width: 1278px) {
+      top: 420px;
+    }
+    @media screen and (max-width: 991px) {
+      top: 1050px;
+    }
+  }
+}
+
+// CONTACT
+#contact {
+  background-color: var(--amarelo);
+  min-height: 300px;
+
+  @media screen and (min-width: 1280px) {
+    min-height: 400px;
+  }
+  .card {
+    margin-top: -110px;
+    background-color: #000000;
+    border-radius: 30px !important;
+    background-image: url(/assets/img/livraria.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .tel {
+      margin: auto;
+      width: 28px;
+      height: 28px;
+      border-radius: 20px;
+    }
+  }
+}
+
+//////////// PAGINA CONTACT
+
+// MEGA HEADER 3
+#megaHeader3 {
+  min-height: 581px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #28328c;
+  background-image: url(/assets/img/banner-contato.png);
+  color: var(--branco);
+  h1 {
+    font-weight: 100;
+  }
+
+  .detail {
+    bottom: 0;
+  }
+}
+
+// AUTHORS
+#contact-authors {
+  @media screen and (max-width: 767px) {
+    .form-position {
+      order: 2;
+    }
+  }
+
+  form {
+    h2 {
+      color: var(--azul-claro);
+    }
+
+    .form-group {
+      input {
+        border-radius: 40px;
+        padding-left: 1.5rem;
+        border: none;
+        background-color: var(--azul-escuro);
+        color: var(--branco);
+      }
+
+      input::placeholder {
+        color: #d8d8d8;
+      }
+
+      textarea {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border-radius: 30px;
+        border: none;
+        background-color: var(--azul-escuro);
+        border: none;
+        color: var(--branco);
+      }
+
+      textarea::placeholder {
+        color: #d8d8d8;
+        font-weight: 100;
+      }
+    }
+
+    button {
+      color: var(--azul-claro);
+      border-radius: 20px !important;
+      border: 1px solid var(--azul-claro);
+      background: none;
+      margin: auto;
+    }
+
+    button:hover {
+      background-color: var(--azul-escuro);
+      color: var(--branco);
+      transition: all 0.5s ease-in;
+    }
+  }
+
+  figure {
+    img {
+      mix-blend-mode: luminosity !important;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.363);
+    }
+  }
+
+  .yellow-bg {
+    background-color: #ffea00bd;
+    width: 20vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @media screen and (min-width: 1800px) {
+      width: 30vw;
+    }
+  }
+}
+
+// LIBRARIES
+#contact-libraries {
+  background-color: var(--preto);
+  // min-height: 640px;
+
+  form {
+    h2 {
+      color: var(--branco);
+    }
+
+    .form-group {
+      input {
+        border-radius: 40px;
+        padding-left: 1.5rem;
+        border: none;
+        background-color: var(--branco);
+        color: var(--cinza);
+      }
+
+      input::placeholder {
+        color: var(--cinza);
+      }
+
+      textarea {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border-radius: 30px;
+        border: none;
+        background-color: var(--branco);
+        border: none;
+        color: var(--cinza);
+        outline: none;
+      }
+
+      textarea::placeholder {
+        color: var(--cinza);
+        font-weight: 100;
+      }
+    }
+
+    button {
+      color: var(--branco);
+      border-radius: 20px !important;
+      border: 1px solid var(--branco);
+      background: none;
+      margin: auto;
+    }
+
+    button:hover {
+      background-color: var(--branco);
+      color: var(--azul-escuro);
+      transition: all 0.5s ease-in;
+    }
+  }
+
+  figure {
+    max-width: 712px;
+    img {
+      mix-blend-mode: luminosity !important;
+    }
+  }
+}
+
+// ABC GROUP
+#abc-group {
+  background-color: var(--azul-claro-2);
+  background-image: url(/assets/img/banner-grupo-abc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+
+  button {
+    color: var(--branco);
+    border-radius: 20px !important;
+    border: 1px solid var(--branco);
+    background: none;
+    margin: auto;
+  }
+
+  button:hover {
+    background-color: var(--branco);
+    color: var(--azul-claro);
+    transition: all 0.5s ease-in;
+  }
+
+  h2 {
+    font-weight: 100;
+    span {
+      background-color: var(--amarelo);
+      color: var(--azul-claro);
+      font-weight: 300;
+    }
+  }
+}
+
+//////////// PAGINA INTERNA
+
+// MEGA HEADER 4
+#megaHeader4 {
+  min-height: 780px;
+  background: linear-gradient(90deg, var(--amarelo) 30%, rgba(0, 0, 0, 0) 30%);
+  color: var(--azul-escuro);
+
+  @media screen and(max-width:1279px) {
+    min-height: 600px;
+  }
+
+  @media screen and(max-width:767px) {
+    background: linear-gradient(
+      90deg,
+      var(--amarelo) 40%,
+      rgba(0, 0, 0, 0) 40%
+    );
+  }
+
+  h1 {
+    font-weight: 300;
+  }
+
+  figure {
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.425));
+  }
+
+  .places {
+    gap: 1rem;
+
+    a {
+      background: none;
+      border: 1px solid var(--azul-escuro);
+      color: var(--azul-escuro);
+      border-radius: 40px;
+    }
+  }
+}
+
+// ORGANIZER
+#organizer {
+  color: var(--azul-escuro);
+
+  h2 {
+    font-weight: 300;
+  }
+  .h5 {
+    font-weight: 300;
+  }
+
+  @media screen and(min-width: 767px) {
+    margin-top: -8rem;
+
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 52%,
+      var(--azul-escuro) 40%
+    );
+
+    figure:nth-child(2) {
+      img {
+        margin-top: -2rem;
+      }
+    }
+  }
+
+  @media screen and(max-width:1279px) {
+    margin-top: -1rem;
+  }
+}
+
+// TRAILER
+#trailer {
+  height: 700px;
+  background-color: var(--preto);
+
+  figure {
+    max-width: 90%;
+    max-height: 80%;
+    background-color: var(--azul-escuro);
+    cursor: pointer;
+  }
+}
